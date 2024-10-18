@@ -1,0 +1,183 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#D5D5D5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home Loan EMI Calculator"
+        android:textColor="#333333"
+        android:textSize="26sp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/loanAmountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loan Amount: 100k"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/blue"
+        android:layout_marginTop="40dp" />
+
+    <SeekBar
+        android:id="@+id/loanAmountProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressTint="@color/blue"
+        android:thumbTint="@color/blue"
+        android:max="100"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/white"
+         />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp">
+
+        <TextView
+            android:id="@+id/minAmountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100k"
+            android:textSize="15sp"
+             android:textColor="@color/blue" />
+
+        <TextView
+            android:id="@+id/maxAmountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1M"
+            android:layout_alignParentEnd="true"
+            android:textSize="15sp"
+             android:textColor="@color/blue" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/interestRateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interest Rate: 0.5%"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/blue"
+        android:layout_marginTop="30dp" />
+
+    <SeekBar
+        android:id="@+id/interestRateProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressTint="@color/blue"
+        android:thumbTint="@color/blue"
+        android:max="100"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/white"
+         />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp">
+
+        <TextView
+            android:id="@+id/minInterestRateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.5%"
+            android:textSize="15sp"
+             android:textColor="@color/blue" />
+
+        <TextView
+            android:id="@+id/maxInterestRateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15%"
+            android:layout_alignParentEnd="true"
+            android:textSize="15sp"
+             android:textColor="@color/blue" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/loanTenureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loan Tenure: 1 year"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:layout_marginTop="30dp" />
+
+    <SeekBar
+        android:id="@+id/loanTenureProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:thumbTint="@color/blue"
+        android:progressTint="@color/blue"
+        android:max="30"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/white"
+         />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp">
+
+        <TextView
+            android:id="@+id/minLoanTenureTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="15sp"
+            android:textColor="@color/blue" />
+
+        <TextView
+            android:id="@+id/maxLoanTenureTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30"
+            android:layout_alignParentEnd="true"
+            android:textSize="15sp"
+            android:textColor="@color/blue" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/emiResultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monthly EMI: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:id="@+id/pdfBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate PDF"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/white"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"
+        android:textStyle="bold"
+        android:elevation="4dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_button" />
+
+</LinearLayout>
